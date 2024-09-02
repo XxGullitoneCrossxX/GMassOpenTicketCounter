@@ -26,7 +26,7 @@ const slackNotifyError = (entity,errorMessage) => {
         ]
     }
 
-    slackHook.post(process.env.SLACK_ERROR_WEBHOOK_URL,template)
+    slackHook.post(process.env.SLACK_DOMAIN_ERROR_WEBHOOK_URL,template)
     .then((result)=>{
         console.log(`${new Date().toISOString()} Error Update has been posted in the channel\n`)
 

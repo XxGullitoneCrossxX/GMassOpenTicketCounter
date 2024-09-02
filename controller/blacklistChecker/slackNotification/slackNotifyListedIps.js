@@ -44,7 +44,7 @@ const slackNotifyListedIps = (entity,status) => {
 
     }
 
-    slackHook.post(process.env.SLACK_SUCCESS_WEBHOOK_URL,template)
+    slackHook.post(process.env.SLACK_DOMAIN_SUCCESS_WEBHOOK_URL,template)
             .then((result)=>{
                 console.log('Ips/Domain Update has been posted in the channel')
 
